@@ -2,15 +2,18 @@
 FIN2B Test Project
 
 1) node js 설치
+
 '$npm install express-generator -g
 
 '$cd myprj
 
 '$npm install
 
+
 2) package
 
 'node.ajax
+
 
 3) web server 시작
 
