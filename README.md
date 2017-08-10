@@ -5,8 +5,10 @@ FIN2B Test Project
 '$npm install express-generator -g
 '$cd myprj
 '$npm install
+
 2) package
 'node.ajax
+
 3) web server 시작
 '$npm start
 
