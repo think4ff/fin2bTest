@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><%= title %></title>
+	<!-- 부트스트랩 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <% include ./partials/top %>
+
+
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Search page!!</h1>
+			<div>
+		    <form class="navbar-form navbar-right" action="/searchAction" onsubmit="return chekWord(this);">
+		      <div class="form-group">
+		        <input type="text" name="sword"  size='70' placeholder="search word" class="form-control">
+		      </div>
+		      <button type="submit" class="btn btn-success" >submit</button>
+		    </form>
+		  </div>
+			<p><a class="btn btn-primary btn-lg" href="/" role="button">Home &raquo;</a></p>
+		</div>
+	</div>
+
+	<div class="container">
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Page1</h2>
+				<p> this is for page1 </p>
+				<p><a class="btn btn-default" href="/page1" role="button">Go for details &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+				<h2>Search_page</h2>
+				<p> this is for Search_page </p>
+				<p><a class="btn btn-default" href="/searchForm" role="button">Go for details &raquo;</a></p>
+			</div>
+			<div class="col-md-4">
+				<h2>Fibonacci</h2>
+				<p> Fibonacci Numbers </p>
+				<p><a class="btn btn-default" href="/fibonacciForm" role="button">Go for details &raquo;</a></p>
+			</div>
+		</div>
+
+		<hr>
+
+		<footer>
+			<p>&copy; Company Name</p>
+		</footer>
+	</div>
+	<!-- /container -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
